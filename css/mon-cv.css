@@ -7,6 +7,10 @@ header {
   height: auto;
 }
 
+.logo {
+  margin-bottom: 0;
+}
+
 .title-header {
   color: #fff;
 }
@@ -51,3 +55,8 @@ header {
   margin: 0 auto;
   line-height: 25px;
 }
+
+.section-right, .section-left {
+  display: flex;
+}
+
