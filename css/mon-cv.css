@@ -38,13 +38,19 @@ header {
   padding: 2%;
 }
 
-.title-about {
+.title-about, .title-contact {
   text-align: center;
+  text-transform: uppercase;
   font-family: Roboto;
   font-size: 1.5em;
   font-style: italic;
   font-weight: 400;
   letter-spacing: 0em;
+  color: #00000080;
+}
+
+.title-contact { 
+  padding-top: 1%;
 }
 
 .text-about {
@@ -76,9 +82,42 @@ ul {
   background-color:#5569DC26;
 }
 
+.main-contact {
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+}
+
+.contact-me {
+  color: #00000090;
+  font-family: Roboto;
+  font-size: 1.5em;
+  text-decoration: none;
+  padding: 0.5%;
+  margin: 0 auto;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.sociaux-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
 .footer-contact p {
+  background: #C4C4C4;
+  color: #00000080;
+  font-size: 1.5em;
+  line-height: 53px;
+  font-family: Roboto;
+  font-style: italic;
+  text-align: center;
   margin: 0;
 }
+
+
 
 
 
