@@ -33,11 +33,8 @@ header {
 
 /******* Main *******/
 
-/* .wrapper {
-} */
-
 .about-us {
-  background-color: #4152b356;
+  background: #5569DC0F;
   padding: 2%;
 }
 
@@ -58,5 +55,32 @@ header {
 
 .section-right, .section-left {
   display: flex;
+  margin:0 95px;
 }
+
+h3 {
+  color: #976B68;
+}
+
+.section-right ul li, .section-left ul li {
+  max-width: 500px;
+}
+
+
+ul {
+  padding: 0;
+  padding-right: 50px;
+}
+
+.footer-contact {
+  background-color:#5569DC26;
+}
+
+.footer-contact p {
+  margin: 0;
+}
+
+
+
+
 
