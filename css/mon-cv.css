@@ -1,10 +1,18 @@
 /******* Header *******/
-header {
+
+/* header {
   display: flex;
   justify-content: space-around;
   background-image: linear-gradient(rgba(100, 100, 133, 0.2), rgba(203, 203, 172, 0.2)),url('/img/code-banner.jpg');
   width: 100%;
   height: auto;
+} */
+
+header {
+  background-image: linear-gradient(rgba(100, 100, 133, 0.2), rgba(203, 203, 172, 0.2)),url('/img/code-banner.jpg');
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 2.5%;
 }
 
 .logo {
@@ -19,7 +27,7 @@ header {
   color: #fff;
   text-decoration: none;
   background-color:rgba(204, 204, 204, 0.5);
-  padding: 5%;
+  padding: 1.5%;
   border-radius: 3px;
 }
 
@@ -56,22 +64,36 @@ header {
 .text-about {
   max-width: 700px;
   margin: 0 auto;
+  padding: 1%;
   line-height: 25px;
 }
-
+/***** Responsive grid *****/
+.section-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: space-between;
+  padding: 3% 7.5%;
+  column-gap: 11%;
+}
+/*
+.section-right, .section-left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 12%;*/ /* 12% égal à 160px à peu près*/
+  /*gap:20%;
+}
+*/
+/* 
+ce qui a au dessus = en dessous
 .section-right, .section-left {
   display: flex;
   margin:0 95px;
-}
+} 
+*/
 
 h3 {
   color: #976B68;
 }
-
-.section-right ul li, .section-left ul li {
-  max-width: 500px;
-}
-
 
 ul {
   padding: 0;
@@ -97,8 +119,10 @@ ul {
   margin: 0 auto;
 }
 
-a:hover {
+.contact-me:hover {
   text-decoration: underline;
+  color: #000000aa;
+
 }
 
 .sociaux-footer {
